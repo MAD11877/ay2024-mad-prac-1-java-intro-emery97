@@ -9,8 +9,16 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
+
     Scanner in = new Scanner(System.in);
     
+    // Read the first integer
+    int num1 = in.nextInt();
+    
+    // Read the second integer
+    int num2 = in.nextInt();
+
+    // Multiply the integers and print the result
+    System.out.println(num1 * num2);
   }
 }
