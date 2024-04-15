@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Question5
@@ -25,8 +26,31 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
+
     Scanner in = new Scanner(System.in);
-    
+    int count = in.nextInt();
+
+    // Create a HashMap to store the occurrences of each integer
+    HashMap<Integer, Integer> occurrences = new HashMap<>();
+
+    // Read the integers and count their occurrences
+    for (int i = 0; i < count; i++) {
+      int num = in.nextInt();
+      occurrences.put(num, occurrences.getOrDefault(num, 0) + 1);
+    }
+
+    // Find the mode (number with the highest occurrence)
+    int mode = 0;
+    int maxCount = 0;
+
+    for (int num : occurrences.keySet()) {
+      if (occurrences.get(num) > maxCount) {
+        maxCount = occurrences.get(num);
+        mode = num;
+      }
+    }
+
+    // Print the mode
+    System.out.println(mode);
   }
 }
