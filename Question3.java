@@ -5,10 +5,10 @@ public class Question3 {
     Scanner scanner = new Scanner(System.in);
 
     // Prompt the user for two integers
-    System.out.print("Enter the first integer: ");
+    System.out.print();
     int num1 = scanner.nextInt();
 
-    System.out.print("Enter the second integer: ");
+    System.out.print();
     int num2 = scanner.nextInt();
 
     // Multiply and print the result
