@@ -1,19 +1,22 @@
 import java.util.Scanner;
 
-public class Question3 {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+public class Question3
+{
+  public static void main(String[] args)
+  {
+    /**
+     * Reads integer entered by the user, multiplies the integer by itself and print out the result.
+     * 
+     * Hint: in.nextInt() to read integer
+     */
 
-    // Prompt the user for two integers
-    System.out.print();
-    int num1 = scanner.nextInt();
+    Scanner in = new Scanner(System.in);
 
-    System.out.print();
-    int num2 = scanner.nextInt();
+    System.out.print("");
+    int number = in.nextInt();
 
-    // Multiply and print the result
-    System.out.println(num1 * num2);
+    int result = number * number;
+    System.out.println(result);
 
-    scanner.close();
   }
 }
