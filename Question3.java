@@ -1,3 +1,5 @@
+/* DoubleTest ✘ java.util.NoSuchElementException*/
+
 import java.util.Scanner;
 
 public class Question3
@@ -11,12 +13,12 @@ public class Question3
      */
 
     Scanner in = new Scanner(System.in);
-    
+
     // Read the first integer
     int num1 = in.nextInt();
-    
+    Scanner ini = new Scanner(System.in);
     // Read the second integer
-    int num2 = in.nextInt();
+    int num2 = ini.nextInt();
 
     // Multiply the integers and print the result
     System.out.println(num1 * num2);
