@@ -1,3 +1,5 @@
+/*BMITest ✘ expected:<[]0.1> but was:<[Enter your height in meters: Enter your weight in kilograms: Your BMI is: ]0.1>*/
+
 import java.util.Scanner;
 
 public class Question2
@@ -12,17 +14,17 @@ public class Question2
     Scanner in = new Scanner(System.in);
 
     // Prompt user to enter height
-    System.out.print("Enter your height in meters: ");
+    System.out.print("");
     double height = in.nextDouble();
 
     // Prompt user to enter weight
-    System.out.print("Enter your weight in kilograms: ");
+    System.out.print("");
     double weight = in.nextDouble();
 
     // Calculate BMI
     double BMI = weight / (height * height);
 
     // Print BMI
-    System.out.println("Your BMI is: " + BMI);
+    System.out.println(BMI);
   }
 }
